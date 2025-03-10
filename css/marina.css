@@ -1,0 +1,62 @@
+.box {
+    background-color: rgb(59, 67, 61);
+   
+    padding-left: 40vh;
+    height: 40vh;
+    border-radius: 30px;
+    animation-name: fade;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 12px;
+    margin-left: 40vh;
+    padding-top: 12px;
+    margin-top: 30px;
+   
+}
+.box:hover {
+    animation-name: slides;
+    animation-duration: 5s;
+    animation-delay: -2s;
+    z-index: -2s;
+   
+}
+@keyframes slides {
+    0% {
+        
+transform: rotate(180deg);
+border-radius: 60px;
+box-sizing: border-box;
+box-decoration-break: slice;
+box-shadow: 30px 20px 40px 10px yellow;
+    } 100% {
+        transform: rotate(-360deg);
+        border-radius: 50px;
+        color: green;
+        text-decoration: underline;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+        justify: flex;
+        box-shadow: 60px 50px 30px 40px yellow;
+    }
+}
+@keyframes fade {
+    from {
+        box-shadow: 30px 80px rgb(210, 0, 0);
+    }
+}
+.photo {
+    height: 40vh;
+    border-radius: 30px;
+    width: 1001vh;
+    margin-right: 100px;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flexbox;
+    justify-items: center;
+}
